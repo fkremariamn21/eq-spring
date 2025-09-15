@@ -1,15 +1,36 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
+    <meta charset="UTF-8">
     <title>Equib Groups</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
 </head>
 <body>
-<h2>Equib Groups</h2>
-<a href="/add-group">Create New Group</a>
-<ul>
-    <li th:each="g : ${groups}">
-        <a th:href="@{/group/{id}(id=${g.id})}" th:text="${g.name}"></a>
-    </li>
-</ul>
+    <div class="container">
+        <h1>Equib Groups</h1>
+
+        <a href="/add-group" class="add-group-link">Create New Group</a>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Contribution Amount</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="group : ${groups}">
+                    <td th:text="${group.id}"></td>
+                    <td th:text="${group.name}"></td>
+                    <td th:text="${group.contributionAmount}"></td>
+                    <td>
+                        <a th:href="@{'/members/group/' + ${group.id}}">View Members</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

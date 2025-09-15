@@ -1,5 +1,9 @@
 /workspaces/eq-spring/src/main/java/com/example/equib/model/Contribution.java
+/workspaces/eq-spring/src/main/java/com/example/equib/repository/MemberRepository.java
+/workspaces/eq-spring/src/main/java/com/example/equib/controller/MemberController.java
+/workspaces/eq-spring/src/main/java/com/example/equib/model/GroupStatus.java
 /workspaces/eq-spring/src/main/java/com/example/equib/model/Member.java
+/workspaces/eq-spring/src/main/java/com/example/equib/service/MemberService.java
 /workspaces/eq-spring/src/main/java/com/example/equib/EquibApplication.java
 /workspaces/eq-spring/src/main/java/com/example/equib/model/Group.java
 /workspaces/eq-spring/src/main/java/com/example/equib/repository/GroupRepository.java

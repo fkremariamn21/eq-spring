@@ -9,4 +9,3 @@ public class EquibApplication {
         SpringApplication.run(EquibApplication.class, args);
     }
 }
-  

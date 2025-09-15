@@ -1,7 +1,11 @@
 com/example/equib/service/GroupService.class
 com/example/equib/repository/GroupRepository.class
+com/example/equib/model/GroupStatus.class
 com/example/equib/model/Group.class
 com/example/equib/model/Contribution.class
+com/example/equib/repository/MemberRepository.class
+com/example/equib/controller/MemberController.class
 com/example/equib/controller/GroupController.class
+com/example/equib/service/MemberService.class
 com/example/equib/EquibApplication.class
 com/example/equib/model/Member.class

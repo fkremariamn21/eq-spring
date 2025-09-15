@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Add Group</title>
+    <meta charset="UTF-8">
+    <title>Create New Equib Group</title>
 </head>
 <body>
-<h2>Add New Group</h2>
-<form th:action="@{/add-group}" th:object="${group}" method="post">
-    <label>Name: <input type="text" th:field="*{name}" /></label><br>
-    <label>Contribution Amount: <input type="number" th:field="*{contributionAmount}" /></label><br>
-    <button type="submit">Save</button>
-</form>
+    <h1>Create New Group</h1>
+    <form th:action="@{/save-group}" th:object="${group}" method="post">
+        <label for="name">Group Name:</label><br>
+        <input type="text" id="name" th:field="*{name}" required><br><br>
+
+        <label for="contributionAmount">Contribution Amount:</label><br>
+        <input type="number" id="contributionAmount" th:field="*{contributionAmount}" required><br><br>
+
+        <button type="submit">Create Group</button>
+    </form>
 </body>
 </html>
