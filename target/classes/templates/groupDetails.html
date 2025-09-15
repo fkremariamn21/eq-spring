@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Group Details</title>
+</head>
+<body>
+<h2 th:text="${group.name}">Group Name</h2>
+<p>Contribution Amount: <span th:text="${group.contributionAmount}"></span></p>
+
+<h3>Members</h3>
+<ul>
+    <li th:each="m : ${group.members}" th:text="${m.fullName}"></li>
+</ul>
+
+<a href="/">Back to Groups</a>
+</body>
+</html>

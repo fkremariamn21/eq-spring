@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Equib Groups</title>
+</head>
+<body>
+<h2>Equib Groups</h2>
+<a href="/add-group">Create New Group</a>
+<ul>
+    <li th:each="g : ${groups}">
+        <a th:href="@{/group/{id}(id=${g.id})}" th:text="${g.name}"></a>
+    </li>
+</ul>
+</body>
+</html>

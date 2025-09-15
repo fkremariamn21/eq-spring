@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Group</title>
+</head>
+<body>
+<h2>Add New Group</h2>
+<form th:action="@{/add-group}" th:object="${group}" method="post">
+    <label>Name: <input type="text" th:field="*{name}" /></label><br>
+    <label>Contribution Amount: <input type="number" th:field="*{contributionAmount}" /></label><br>
+    <button type="submit">Save</button>
+</form>
+</body>
+</html>
